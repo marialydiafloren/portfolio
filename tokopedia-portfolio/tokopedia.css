@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    background-color: #F2F1F1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* Use the imported font */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    grid-gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-items: center; /* Center items horizontally */
+    max-width: 100%;
+    box-sizing: border-box; /* Include padding in element's width */
+}
+
+.item {
+    background-color: #ececec;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Include padding in element's width */
+}
+
+.button {
+    padding: 10px 45px;
+    background-color: #007bff00;
+    color: #3F3F3F;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3F3F3F;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.button-discovery {
+    padding: 10px 50px;
+    background-color: #007bff00;
+    color: #3F3F3F;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3F3F3F;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-page{
+    padding: 10px 30px;
+    background-color: #007bff00;
+    color: #3F3F3F;
+    text-decoration: none;
+    border: 1px solid #3F3F3F;
+    border-radius: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.page-container{
+    text-align: end;
+    margin-right: 200px;
+}
