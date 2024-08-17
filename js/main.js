@@ -30,3 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter();
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector('.work__slider');
+    const sliderWidth = slider.scrollWidth; // Get the total width of the slider
+    const logos = slider.innerHTML;
+    slider.innerHTML += logos; // Duplicate the logos
+
+    // Adjust the animation distance to cover both sets of logos
+    slider.style.animation = `slide ${sliderWidth / 100}s linear infinite`;
+});

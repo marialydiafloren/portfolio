@@ -37,6 +37,7 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body, p {
@@ -81,14 +82,6 @@ h5 {
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
-	font-family: "Poppins"
-}
-
-h6 {
-	color: #24262a;
-	font-weight: 700;
-	font-size: 1rem;
-	line-height: 1.375rem;
 	font-family: "Poppins"
 }
 
@@ -139,7 +132,7 @@ a:hover {
 }
 
 .bg-gray {
-	background-color: #f7f9fb;
+	background-color: #f8f8f8;
 }
 
 .section-divider {
@@ -158,7 +151,6 @@ a:hover {
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
-	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -177,7 +169,6 @@ a:hover {
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
-	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -196,7 +187,6 @@ a:hover {
 	color: #24262a;
 	font-weight: 600;
 	font-size: 0.875rem;
-	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -215,7 +205,6 @@ a:hover {
 	color: #24262a;
 	font-weight: 600;
 	font-size: 0.875rem;
-	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
 }
@@ -280,7 +269,7 @@ a:hover {
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
 	padding-left: 1.5rem;
-	border: 1px solid #cbcbd1;
+	border: 1px solid #cecece;
 	background-color: #ffffff;
 	color: #4d5055;
 	font-size: 0.875rem;
@@ -303,7 +292,7 @@ select {
     -o-appearance: none;
     appearance: none;
     background-image: url('../images/down-arrow.png');
-    background-position: 96% 50%;
+    background-position: 100% 67%;
     background-repeat: no-repeat;
     outline: none;
 }
@@ -571,10 +560,6 @@ input[type='checkbox'] {
 	font-family: "Poppins";
 }
 
-.basic-1 h6 {
-	margin-bottom: 0.125rem;
-}
-
 
 /********************/
 /*     Services     */
@@ -597,7 +582,7 @@ input[type='checkbox'] {
 .basic-2 .text-box {
 	margin-bottom: 3rem;
 	padding: 3.5rem 1rem 2.125rem 1rem;
-	border: 1px solid #cfd7de;
+	border: 1px solid #dcdddd;
 }
 
 .basic-2 .fas,
@@ -720,112 +705,6 @@ input[type='checkbox'] {
 	transform: scale(1.15);
 } 
 /* end of hover animation */
-
-
-/************************/
-/*     Testimonials     */
-/************************/
-.cards-1 {
-	padding-top: 3rem;
-	padding-bottom: 3.875rem;
-}
-
-.cards-1 .h2-heading {
-	margin-bottom: 3rem;
-	text-align: center;
-}
-
-.cards-1 .card {
-	margin-bottom: 4rem;
-	border: none;
-}
-
-.cards-1 .card-body {
-	padding: 0;
-	text-align: center;
-}
-
-.cards-1 .testimonial-text {
-	margin-bottom: 1.625rem;
-}
-
-.cards-1 img {
-	display: inline-block;
-	width: 60px;
-	margin-bottom: 0.875rem;
-	border-radius: 50%;
-}
-
-.cards-1 .text {
-	margin-top: 0.375rem;
-}
-
-.cards-1 .testimonial-author {
-	color: #24262a;
-}
-
-.cards-1 .testimonial-author,
-.cards-1 .occupation {
-	font-size: 0.875rem;
-	line-height: 1.375rem;
-}
-
-
-/*********************/
-/*     Questions     */
-/*********************/
-.accordion-1 {
-	padding-top: 7.75rem;
-	padding-bottom: 6.75rem;
-}
-
-.accordion-1 .h2-heading {
-	margin-bottom: 2.5rem;
-	text-align: center;
-}
-
-.accordion-1 .card {
-	margin-bottom: 1.75rem;
-	border: none;
-}
-
-.accordion-1 .card-header {
-	padding: 0;
-	border: none;
-	background-color: transparent;
-}
-
-.accordion-1 .card button {
-	padding: 0;
-	color: #24262a;
-	font-weight: 600;
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	font-family: 'Poppins';
-}
-
-.accordion-1 .card button:hover {
-	text-decoration: none;
-}
-
-.accordion-1 .card button:before {
-	float: left;
-	margin-right: 0.625rem;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	content: "\f078";
-	transition: all 0.2s;
-}
-
-.accordion-1 .card button.collapsed:before {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-} 
-
-.accordion-1 .card-body {
-	padding: 0.75rem 1.5rem 0.5rem 1.5rem;
-}
 
 
 /*******************/
@@ -1309,4 +1188,309 @@ a:hover.back-to-top {
 .row {
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.ex-header-container{
+	background-image: url('images/little-lemon.png');
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* Adjust top and bottom margins */
+    max-width: 1200px; /* Optional: Set a max-width for the container */
+    padding: 0 20px; /* Add left and right padding/margin */
+    width: calc(100% - 40px); /* Ensure container width accounts for padding */
+}
+
+/* Content and Image Blocks */
+.content-block, .image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content */
+    margin-bottom: 50px;
+}
+
+/* Image Block */
+.image-block {
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Heading */
+h1 {
+    margin-left: 0; /* Align left */
+    text-align: left;
+    width: 100%; /* Ensures h1 takes full width */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+
+    .content-block, .image-block {
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center; /* Center text on smaller screens */
+        margin-left: 0; /* Remove left margin for mobile */
+    }
+
+    .btn {
+        margin-left: auto; /* Remove left margin */
+        margin-right: auto; /* Center button horizontally */
+        margin-top: 10px; /* Optional: Add some top margin */
+        margin-bottom: 10px; /* Optional: Add some bottom margin */
+        padding: 10px 20px;
+        font-size: 10px;
+        display: block; /* Make it a block element for centering */
+        text-align: center; /* Center the text within the button */
+    }
+
+    .img-fluid {
+        max-width: 95%; /* Reduce image size slightly for mobile */
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+.btn {
+    padding: 12px 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #24262ab7;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    box-shadow: inset 0 0 0 50px #24262ab7;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    
+    margin-left: 15px; /* Left margin on larger screens */
+    margin-right: 0; /* Ensure no right margin */
+    display: inline-block; /* Keep the button inline */
+}
+
+
+
+
+.btn:hover {
+    color: #24262ab7;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #24262ab7;
+    border-color: #24262a;
+}
+
+.work__container {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #00000000; /* Background color to match the slider section */
+    padding: 20px 0; /* Padding around the logos */
+}
+
+.work__slider {
+    display: flex;
+    align-items: center;
+    animation: slide 20s linear infinite;
+}
+
+.work__img {
+    flex: 0 0 auto;
+    width: 150px; /* Adjust the width according to your logo size */
+    margin-right: 60px; /* Reduced spacing between logos */
+}
+
+
+.work__img img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+/* Animation for sliding effect */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move only half of the total content width */
+    }
+}
+
+.work.section {
+    padding-bottom: 50px; /* Adds space below the slider */
+    /* You can also use margin-bottom instead */
+    /* margin-bottom: 50px; */
+}
+
+
+.grid-container-skills {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+		gap: 5px; /* Adjust gap between columns if needed */
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
+
+.button {
+	display: inline-block;
+	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
+	border: 1px solid #252525;
+	background-color: #252525;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+}
+
+.container {
+    max-width: 1200px; /* Max width of the container */
+    margin: 0 auto; /* Center container */
+    padding: 0 15px; /* Padding for responsiveness */
+    width: 100%; /* Full width of container */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+.overview img {
+    max-width: 100%; /* Image should not be wider than its container */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Full width of container */
+}
+
+.about .about-content {
+    padding: 0 60px;
+}
+
+.about .about-text p {
+    font-size: 16px;
+}
+
+.about .skills {
+    margin-bottom: 30px;
+}
+
+.about .skill-name {
+    margin-top: 15px;
+}
+
+.about .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about .skill-name p:last-child {
+    float: right;
+}
+
+.about .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #dddddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .progress .progress-bar {
+    width: 0; /* Starting point for the animation */
+    background: #F4CE14;
+    border-radius: 10px;
+    transition: width 2s ease-in-out; /* Animate the width */
+}
+
+.about .about-text a.btn {
+    margin-top: 15px;
+}
+
+@media (max-width: 991.98px) {
+    .about .about-content {
+        padding: 45px 15px 0 15px;
+    }
+}
+
+/* Animation for progress bar */
+@keyframes loadProgress {
+    0% { width: 0; }
+    100% { width: var(--progress-value); }
+}
+
+.about .progress-bar[aria-valuenow="100"] {
+    --progress-value: 100%;
+}
+
+.about .progress-bar[aria-valuenow="80"] {
+    --progress-value: 80%;
+}
+
+.about .progress-bar[aria-valuenow="70"] {
+    --progress-value: 70%;
+}
+
+.about .progress-bar {
+    animation: loadProgress 2s forwards;
+}
+
+.about .about-img img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any spacing below the image */
+}
+
+.about .about-img {
+    max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+    margin: 0 auto; /* Center the image if there's extra space */
+    text-align: center; /* Center the image within the container */
+}
+
+/* Heading 6 - Default (Larger Screens) */
+/* Heading 6 - Default (Larger Screens) */
+h6 {
+    color: #24262a;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; /* Keep it bold by default */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h6 {
+        font-weight: 400; /* Reduce the boldness on smaller screens */
+    }
+}
+
+.content-block, .image-block, h1 {
+	align-items: center;
+	text-align: center;
 }
