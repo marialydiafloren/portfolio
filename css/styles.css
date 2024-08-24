@@ -1242,6 +1242,7 @@ h1 {
         padding: 0 15px; /* Adjust padding for smaller screens */
     }
 
+
     .content-block, .image-block {
         align-items: center;
         text-align: center;
@@ -1494,3 +1495,33 @@ h6 {
 	align-items: center;
 	text-align: center;
 }
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+}
+
+/* Media query for phone size */
+@media (max-width: 768px) {
+    .grid-container-3 {
+        grid-template-columns: 1fr; /* Stack columns vertically */
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+
+    .image-block {
+        text-align: center;
+    }
+
+    .img-fluid {
+        max-width: 95%; /* Adjust image size for mobile */
+        margin: 0 auto;
+    }
+}
+
