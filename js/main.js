@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var texts = ["Hi, I'm Lydia", "Product Design", "UX UI Design", "Web Design", "Mobile Design", "Front-end Dev"];
+    var texts = ["Hi, I'm Lydia!", "Product Designer", "UX UI Designer", "Web Designer", "Mobile Designer", "Front-end Developer"];
     var textIndex = 0;
     var charIndex = 0;
-    var speed = 100; // Speed of typing
-    var backSpeed = 50; // Speed of backspacing
-    var pauseBeforeDelete = 2000; // Pause before starting to backspace
-    var pauseBeforeType = 500; // Pause before starting to type new text
+    var speed = 35; // Speed of typing
+    var backSpeed = 20; // Speed of backspacing
+    var pauseBeforeDelete = 800; // Pause before starting to backspace
+    var pauseBeforeType = 250; // Pause before starting to type new text
 
     function typeWriter() {
         if (charIndex < texts[textIndex].length) {

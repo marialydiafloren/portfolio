@@ -1297,10 +1297,10 @@ h1 {
 
 
 .btn:hover {
-    color: #ffffffb7;
+    color: #1f1f1f;
     background: transparent;
     box-shadow: inset 0 0 0 0 #ffffffb7;
-    border-color: #ffffff;
+    border-color: #252525;
 }
 
 .work__container {
@@ -1484,150 +1484,84 @@ h6 {
     margin-bottom: 20px; /* Adjust the margin as needed */
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    h6 {
-        font-weight: 400; /* Reduce the boldness on smaller screens */
-    }
-}
-
-.content-block, .image-block, h1 {
-	align-items: center;
-	text-align: center;
-}
-
 .grid-container-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    width: calc(100% - 40px);
+    margin: 50px auto; /* Adjust top and bottom margins */
+    max-width: 1200px; /* Optional: Set a max-width for the container */
+    padding: 0 20px; /* Add left and right padding */
+    width: calc(100% - 40px); /* Ensure container width accounts for padding */
 }
 
 /* Media query for phone size */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .grid-container-3 {
-        grid-template-columns: 1fr; /* Stack columns vertically */
-        padding: 0 15px; /* Adjust padding for smaller screens */
+        grid-template-columns: 1fr; /* One column per row */
     }
 
-    .image-block {
-        text-align: center;
-    }
-
-    .img-fluid {
-        max-width: 95%; /* Adjust image size for mobile */
-        margin: 0 auto;
-    }
+	.parent-container {
+		width: auto;
+		height: auto;
+		align-items: center;
+	}
 }
 
 /* Center the card in the middle of the screen */
 .parent-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background-color: #ffffff; /* Optional: Set a background color for better contrast */
-  }
-  
-  /* Container for the card */
-  .card-container {
-	position: relative;
-	width: 1100px;
-	height: 700spx;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Image */
-  .card-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 10px;
-  }
-  
-  /* Hidden content */
-  .card-content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(34, 34, 34, 0.747); /* Dark overlay */
-	color: white;
-	opacity: 0;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transition: opacity 0.5s ease, transform 0.5s ease;
-	border-radius: 10px;
-	transform: translateY(100%); /* Hide content by moving it down */
-  }
-  
-  /* Hover effect to show the content */
-  .card-container:hover .card-content {
-	opacity: 1;
-	transform: translateY(0); /* Bring content back to its original position */
-  }
-  
-  /* Read more button */
-  .read-more {
-	margin-top: 20px;
-	padding: 10px 20px;
-	background-color: white;
-	color: black;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	font-weight: bold;
-  }
-  
-  .read-more:hover {
-	background-color: #f0f0f0;
-  }
-  
-  .card-content p {
-	color: #e9e9e9;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Optional: Set a background color for better contrast */
+}
 
-  @media screen and (max-width: 600px) {
-	/* Show the content and button always on mobile */
-	.card-content {
-		opacity: 1;
-		transform: none;
-		position: static; /* Make content static rather than absolutely positioned */
-		background-color: transparent; /* Remove the dark overlay */
-		color: black;
-		padding: 10px;
-		text-align: center; /* Center-align the text */
-	}
+/* Container for the card */
+.card-container {
+  position: relative;
+  width: 1100px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-	/* Hide hover effect for mobile */
-	.card-container:hover .card-content {
-		opacity: 1;
-		transform: none;
-	}
+/* Image */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-	.card-content h2 {
-		font-size: 1rem; /* Smaller font size for heading */
-		color: rgb(20, 20, 20); /* Ensure text color is black */
-	}
+/* Hidden content */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: white;
+  opacity: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border-radius: 10px;
+  transform: translateY(100%); /* Hide content by moving it down */
+}
 
-	.card-content p {
-		font-size: 0.8rem; /* Smaller font size for paragraph */
-		color: black; /* Ensure text color is black */
-	}
+/* Hover effect to show the content */
+.card-container:hover .card-content {
+  opacity: 1;
+  transform: translateY(0); /* Bring content back to its original position */
+}
 
-	.read-more {
-		padding: 8px 16px;
-		font-size: 0.9rem; /* Adjust button size */
-	}
+.card-content p {
+	color: #e0e0e0;
 }
