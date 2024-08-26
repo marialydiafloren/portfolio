@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var texts = ["Hi, I'm Lydia!", "Product Designer", "UX UI Designer", "Web Designer", "Mobile Designer", "Front-end Developer"];
+    var texts = ["Hi, I'm Lydia!", "Product Designer", "UX UI Designer", "Web Designer", "Mobile Designer", " and Front-end Dev."];
     var textIndex = 0;
     var charIndex = 0;
     var speed = 35; // Speed of typing

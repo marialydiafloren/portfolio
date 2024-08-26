@@ -31,46 +31,54 @@
     <link rel="icon" href="images/favicon.png">
 </head>
     
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/favicon.png" alt="alternative"></a>  
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/favicon.png" alt="alternative"></a>  
+        
+        <!-- Navbar Links (Resume, LinkedIn, Email) -->
+        <ul class="navbar-nav ml-auto navbar-links">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="./images/resume_marialydiafloren.pdf" target="_blank">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="https://linkedin.com/in/maria-lydia-floren" target="_blank">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="email.html">Email</a>
+            </li>
+        </ul>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Collapsible Navbar -->
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="about-me.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item page-scroll" href="edusphere.html">EduSphere</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item page-scroll" href="little-lemon.html">Little Lemon</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item page-scroll" href="tokopedia.html">Tokopedia</a>
+                    </div>
+                </li>
+            </ul>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about-me.html">About Me</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="edusphere.html">EduSphere</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="little-lemon.html">Little Lemon</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="tokopedia.html">Tokopedia</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="email.html">Email</a>
-                    </li>
-                </ul>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
 
     
 

@@ -1565,3 +1565,55 @@ h6 {
 .card-content p {
 	color: #e0e0e0;
 }
+
+.image-block {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text inside the container */
+    height: 100%; /* Ensure the block takes full height */
+}
+
+.image-block p {
+    margin: 0; /* Remove default margin */
+    padding: 0 15px; /* Optional: Add some padding for spacing */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.row h3 {
+    color: #ececec;
+    text-align: center;
+}
+
+/* Hide the navbar-links on screens smaller than 992px */
+@media (max-width: 991.98px) {
+    .navbar-links {
+        display: none;
+    }
+}
+
+/* Make sure the navbar links are visible on larger screens */
+@media (min-width: 992px) {
+    .navbar-links {
+        display: flex;
+    }
+}
+
+/* Apply the effect to all direct children of body */
+body > * {
+    opacity: 0;
+    transform: translateY(20px); /* Move elements 20px down */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* When the body is hovered, all elements will fade in and slide up */
+body:hover > * {
+    opacity: 1;
+    transform: translateY(0); /* Reset the position */
+}
