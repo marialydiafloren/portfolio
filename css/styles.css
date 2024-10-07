@@ -977,6 +977,8 @@ a:hover.back-to-top {
 	/* end of navigation */
 
 
+
+
 	/* Header */
 	.header {
 		padding-top: 15rem;
@@ -1591,19 +1593,56 @@ h6 {
     text-align: center;
 }
 
-/* Hide the navbar-links on screens smaller than 992px */
+
+/* Handle smaller screens */
 @media (max-width: 991.98px) {
+    .navbar {
+        display: block;
+    }
+
     .navbar-links {
-        display: none;
+        display: none; /* Hide links, show burger menu */
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .offcanvas-collapse {
+        display: block;
+    }
+
+    .offcanvas-collapse.open {
+        display: block;
+        position: absolute; /* Prevents clashing */
+        top: 0;
+        right: 0;
+        width: 50%;
+		height: fit-content;
+        background-color: #24262a; /* Match background color */
     }
 }
 
-/* Make sure the navbar links are visible on larger screens */
+/* For larger screens */
 @media (min-width: 992px) {
-    .navbar-links {
+    .navbar {
         display: flex;
     }
+
+    .navbar-links {
+        display: flex; /* Show links */
+    }
+
+    .navbar-toggler {
+        display: none; /* Hide burger menu */
+    }
+
+    .offcanvas-collapse {
+        display: none; /* Only for small screens */
+
+    }
 }
+
 
 /* Apply the effect to all direct children of body */
 body > * {
